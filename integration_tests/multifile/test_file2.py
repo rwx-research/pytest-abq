@@ -1,3 +1,5 @@
+import pytest
+
 def test_3():
     assert 1 == 1
 

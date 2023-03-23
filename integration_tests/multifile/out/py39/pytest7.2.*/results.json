@@ -19,8 +19,8 @@
         },
         "meta": {},
         "location": {
-          "file": "../../examples/multifile/test_file1.py",
-          "line": 0,
+          "file": "test_file1.py",
+          "line": 2,
           "column": null
         },
         "stderr": "STRIPPED",
@@ -44,14 +44,14 @@
         },
         "id": "test_file1.py::test_2",
         "display_name": "test_file1.py::test_2",
-        "output": ">   ???\nE   assert 1 == 2\n\n/Users/hafiz/Code/Python/pytest-abq/examples/multifile/test_file1.py:5: AssertionError",
+        "output": "def test_2():\n>       assert 1 == 2\nE       assert 1 == 2\n\ntest_file1.py:7: AssertionError",
         "runtime": {
           "Nanoseconds": "STRIPPED"
         },
         "meta": {},
         "location": {
-          "file": "../../examples/multifile/test_file1.py",
-          "line": 3,
+          "file": "test_file1.py",
+          "line": 5,
           "column": null
         },
         "stderr": "STRIPPED",
@@ -79,8 +79,8 @@
         },
         "meta": {},
         "location": {
-          "file": "../../examples/multifile/test_file2.py",
-          "line": 0,
+          "file": "test_file2.py",
+          "line": 2,
           "column": null
         },
         "stderr": "STRIPPED",
@@ -104,14 +104,14 @@
         },
         "id": "test_file2.py::test_4",
         "display_name": "test_file2.py::test_4",
-        "output": ">   ???\nE   assert 1 == 2\n\n/Users/hafiz/Code/Python/pytest-abq/examples/multifile/test_file2.py:5: AssertionError",
+        "output": "def test_4():\n>       assert 1 == 2\nE       assert 1 == 2\n\ntest_file2.py:7: AssertionError",
         "runtime": {
           "Nanoseconds": "STRIPPED"
         },
         "meta": {},
         "location": {
-          "file": "../../examples/multifile/test_file2.py",
-          "line": 3,
+          "file": "test_file2.py",
+          "line": 5,
           "column": null
         },
         "stderr": "STRIPPED",

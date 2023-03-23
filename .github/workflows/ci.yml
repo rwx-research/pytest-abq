@@ -56,5 +56,5 @@ jobs:
 
     - name: Run tox
       run: |
-        TOX_SKIP_ENV='^(?!${{ matrix.py }})'
+        export TOX_SKIP_ENV='^(?!$py{{ matrix.py }})'
         tox
