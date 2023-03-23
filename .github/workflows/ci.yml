@@ -3,6 +3,10 @@ name: CI
 on:
   - push
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   test:
     runs-on: rwx-ubuntu-latest
