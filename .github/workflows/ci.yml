@@ -12,7 +12,15 @@ jobs:
     runs-on: rwx-ubuntu-latest
     strategy:
       matrix:
-        python-version: ["3.8", "3.9", "3.10"]
+        include:
+          - py: 38
+          - python-version: "3.8"
+        include:
+          - py: 39
+          - python-version: "3.9"
+        include:
+          - py: 310
+          - python-version: "3.10"
     env:
       AWS_DEFAULT_REGION: us-east-2
       AWS_DEFAULT_OUTPUT: json
@@ -50,4 +58,5 @@ jobs:
 
     - name: Run tox
       run: |
+        TOX_SKIP_ENV='^(?!${{ matrix.py }})'
         tox

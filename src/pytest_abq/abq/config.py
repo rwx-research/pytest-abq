@@ -32,7 +32,7 @@ spawned_message = AbqNativeRunnerSpawnedMessage(
         test_framework="pytest",
         test_framework_version="7.2.2",
         language="Python",
-        language_version=platform.python_version(),
+        language_version=f"{sys.version_info.major}.{sys.version_info.minor}",
         host=sys.implementation.cache_tag,
     ),
 )
