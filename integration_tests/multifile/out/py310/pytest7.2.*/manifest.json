@@ -1,0 +1,46 @@
+{
+  "manifest": {
+    "members": [
+      {
+        "type": "test",
+        "id": "test_file1.py::test_1",
+        "tags": [],
+        "meta": {}
+      },
+      {
+        "type": "test",
+        "id": "test_file1.py::test_2",
+        "tags": [],
+        "meta": {}
+      },
+      {
+        "type": "test",
+        "id": "test_file2.py::test_3",
+        "tags": [],
+        "meta": {}
+      },
+      {
+        "type": "test",
+        "id": "test_file2.py::test_4",
+        "tags": [],
+        "meta": {}
+      }
+    ],
+    "init_meta": {}
+  },
+  "native_runner_protocol": {
+    "type": "abq_protocol_version",
+    "major": 0,
+    "minor": 2
+  },
+  "native_runner_specification": {
+    "type": "abq_native_runner_specification",
+    "name": "pytest_abq",
+    "version": "7.2.2",
+    "test_framework": "pytest",
+    "test_framework_version": "7.2.2",
+    "language": "Python",
+    "language_version": "3.10.9",
+    "host": "cpython-310"
+  }
+}

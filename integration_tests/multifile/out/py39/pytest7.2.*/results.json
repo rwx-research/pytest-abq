@@ -1,0 +1,122 @@
+[
+  [
+    {
+      "source": {
+        "runner": [
+          0,
+          1
+        ],
+        "is_singleton": true,
+        "has_stdout_reporters": false
+      },
+      "result": {
+        "status": "Success",
+        "id": "test_file1.py::test_1",
+        "display_name": "test_file1.py::test_1",
+        "output": "",
+        "runtime": {
+          "Nanoseconds": "STRIPPED"
+        },
+        "meta": {},
+        "location": {
+          "file": "../../examples/multifile/test_file1.py",
+          "line": 0,
+          "column": null
+        },
+        "stderr": "STRIPPED",
+        "stdout": "STRIPPED"
+      }
+    }
+  ],
+  [
+    {
+      "source": {
+        "runner": [
+          0,
+          1
+        ],
+        "is_singleton": true,
+        "has_stdout_reporters": false
+      },
+      "result": {
+        "status": {
+          "Failure": {}
+        },
+        "id": "test_file1.py::test_2",
+        "display_name": "test_file1.py::test_2",
+        "output": ">   ???\nE   assert 1 == 2\n\n/Users/hafiz/Code/Python/pytest-abq/examples/multifile/test_file1.py:5: AssertionError",
+        "runtime": {
+          "Nanoseconds": "STRIPPED"
+        },
+        "meta": {},
+        "location": {
+          "file": "../../examples/multifile/test_file1.py",
+          "line": 3,
+          "column": null
+        },
+        "stderr": "STRIPPED",
+        "stdout": "STRIPPED"
+      }
+    }
+  ],
+  [
+    {
+      "source": {
+        "runner": [
+          0,
+          1
+        ],
+        "is_singleton": true,
+        "has_stdout_reporters": false
+      },
+      "result": {
+        "status": "Success",
+        "id": "test_file2.py::test_3",
+        "display_name": "test_file2.py::test_3",
+        "output": "",
+        "runtime": {
+          "Nanoseconds": "STRIPPED"
+        },
+        "meta": {},
+        "location": {
+          "file": "../../examples/multifile/test_file2.py",
+          "line": 0,
+          "column": null
+        },
+        "stderr": "STRIPPED",
+        "stdout": "STRIPPED"
+      }
+    }
+  ],
+  [
+    {
+      "source": {
+        "runner": [
+          0,
+          1
+        ],
+        "is_singleton": true,
+        "has_stdout_reporters": false
+      },
+      "result": {
+        "status": {
+          "Failure": {}
+        },
+        "id": "test_file2.py::test_4",
+        "display_name": "test_file2.py::test_4",
+        "output": ">   ???\nE   assert 1 == 2\n\n/Users/hafiz/Code/Python/pytest-abq/examples/multifile/test_file2.py:5: AssertionError",
+        "runtime": {
+          "Nanoseconds": "STRIPPED"
+        },
+        "meta": {},
+        "location": {
+          "file": "../../examples/multifile/test_file2.py",
+          "line": 3,
+          "column": null
+        },
+        "stderr": "STRIPPED",
+        "stdout": "STRIPPED"
+      }
+    }
+  ]
+]
