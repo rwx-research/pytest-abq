@@ -3,6 +3,7 @@ import os
 import socket
 import sys
 import platform
+import pytest
 from typing import Literal, Union
 
 from .types import (
@@ -30,7 +31,7 @@ spawned_message = AbqNativeRunnerSpawnedMessage(
         name="pytest_abq",
         version=__version__,
         test_framework="pytest",
-        test_framework_version="7.2.2",
+        test_framework_version=pytest.__version__,
         language="Python",
         language_version=f"{sys.version_info.major}.{sys.version_info.minor}",
         host=sys.implementation.cache_tag,
