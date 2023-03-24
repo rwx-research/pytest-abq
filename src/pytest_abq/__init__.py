@@ -57,6 +57,10 @@ if _config.enabled is True:
 
     def pytest_configure(config: pytest.Config):
         if abq_config.should_generate_manifest:
+            # Suppress any output during manifest generation.
+            # Otherwise, pytest will print a summary of collected tests and that
+            # no tests were run. This is not particularly useful to a user of
+            # ABQ.
             config.option.verbose = -3
             config.option.no_summary = True
             config.option.no_header = True
