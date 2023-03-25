@@ -1,0 +1,60 @@
+name: CI
+
+on:
+  - push
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: rwx-ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - py: "38"
+            python-version: "3.8"
+          - py: "39"
+            python-version: "3.9"
+          - py: "310"
+            python-version: "3.10"
+    env:
+      AWS_DEFAULT_REGION: us-east-2
+      AWS_DEFAULT_OUTPUT: json
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Check types with mypy
+      run: |
+        mypy .
+
+    - name: Install project and run pytest
+      run: |
+        pip install -e .
+        pytest tests
+
+    - name: Pull down abq tester harness
+      run: |
+        aws configure set aws_access_key_id ${{ secrets.AWS_S3_ABQ_RELEASES_STAGING_ACCESS_KEY_ID }} --profile staging
+        aws configure set aws_secret_access_key ${{ secrets.AWS_S3_ABQ_RELEASES_STAGING_SECRET_ACCESS_KEY }} --profile staging
+        ABQ_BIN="$PWD/abq-bin"
+        mkdir -p "$ABQ_BIN"
+        aws s3 cp "s3://abq-releases-staging/abq/nightly/linux/x86_64/abq_tester_harness" "$ABQ_BIN/abq_tester_harness" --profile staging
+        chmod 755 "$ABQ_BIN/abq_tester_harness"
+        echo "$ABQ_BIN" >> "$GITHUB_PATH"
+
+    - name: Run tox
+      run: |
+        export TOX_SKIP_ENV='^(?!py${{ matrix.py }})'
+        tox

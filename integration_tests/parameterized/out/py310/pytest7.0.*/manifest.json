@@ -1,0 +1,46 @@
+{
+  "manifest": {
+    "members": [
+      {
+        "type": "test",
+        "id": "test_parameterized.py::test_eval[3+5-8]",
+        "tags": [
+          "parametrize"
+        ],
+        "meta": {}
+      },
+      {
+        "type": "test",
+        "id": "test_parameterized.py::test_eval[2+4-6]",
+        "tags": [
+          "parametrize"
+        ],
+        "meta": {}
+      },
+      {
+        "type": "test",
+        "id": "test_parameterized.py::test_eval[6*9-42]",
+        "tags": [
+          "parametrize"
+        ],
+        "meta": {}
+      }
+    ],
+    "init_meta": {}
+  },
+  "native_runner_protocol": {
+    "type": "abq_protocol_version",
+    "major": 0,
+    "minor": 2
+  },
+  "native_runner_specification": {
+    "type": "abq_native_runner_specification",
+    "name": "pytest_abq",
+    "version": "7.2.2",
+    "test_framework": "pytest",
+    "test_framework_version": "7.0.1",
+    "language": "Python",
+    "language_version": "3.10",
+    "host": "cpython-310"
+  }
+}
