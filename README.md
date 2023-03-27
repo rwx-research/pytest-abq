@@ -14,30 +14,14 @@ That's it! Then, run your test suite with ABQ:
 abq test -- pytest
 ```
 
-## Development
+## Compatibility
 
-First, install the development dependencies.
+`pytest-abq` is actively tested against
 
-```
-pip install -r requirements.txt
-```
+- Python 3.8, 3.9, 3.10
+- Pytest 7.0, 7.2
 
-To run unit tests, install the pytest plugin and then run `pytest`:
+`pytest-abq` may support Python and pytest versions beyond these.
 
-```
-pip install -e .
-pytest tests
-```
-
-To run the integration tests with ABQ, you'll need to first have
-`abq_tester_harness` available in your path. Then, run `tox`:
-
-```
-tox
-```
-
-If you need to update the goldens, pass `-- update`:
-
-```
-tox -- update
-```
+`pytest-abq` implements version 0.2 of the ABQ native runner protocol and
+requires ABQ 1.3.0 or greater.
