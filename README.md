@@ -25,31 +25,3 @@ abq test -- pytest
 
 `pytest-abq` implements version 0.2 of the ABQ native runner protocol and
 requires ABQ 1.3.0 or greater.
-
-## Development
-
-First, install the development dependencies.
-
-```
-pip install -r requirements.txt
-```
-
-To run unit tests, install the pytest plugin and then run `pytest`:
-
-```
-pip install -e .
-pytest tests
-```
-
-To run the integration tests with ABQ, you'll need to first have
-`abq_tester_harness` available in your path. Then, run `tox`:
-
-```
-tox
-```
-
-If you need to update the goldens, pass `-- update`:
-
-```
-tox -- update
-```
