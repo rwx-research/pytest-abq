@@ -1,3 +1,19 @@
+[project]
+name = "pytest-abq"
+version = "0.0.1.dev0"
+description = "Pytest integration for the ABQ universal test runner."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/rwx-research/pytest-abq"
+"Bug Tracker" = "https://github.com/rwx-research/pytest-abq/issues"
+
 [build-system]
 requires = [
   "setuptools",
