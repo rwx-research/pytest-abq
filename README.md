@@ -1,6 +1,6 @@
 # pytest-abq
 
-An [ABQ](rwx.com/abq) integration for [pytest](https://docs.pytest.org/en/7.2.x/).
+An [ABQ](https://rwx.com/abq) integration for [pytest](https://docs.pytest.org/en/7.2.x/).
 
 To install:
 
