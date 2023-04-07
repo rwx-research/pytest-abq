@@ -24,7 +24,8 @@
           "column": null
         },
         "stderr": "STRIPPED",
-        "stdout": "STRIPPED"
+        "stdout": "STRIPPED",
+        "timestamp": "STRIPPED"
       }
     }
   ],
@@ -53,7 +54,8 @@
           "column": null
         },
         "stderr": "STRIPPED",
-        "stdout": "STRIPPED"
+        "stdout": "STRIPPED",
+        "timestamp": "STRIPPED"
       }
     }
   ],
@@ -84,7 +86,8 @@
           "column": null
         },
         "stderr": "STRIPPED",
-        "stdout": "STRIPPED"
+        "stdout": "STRIPPED",
+        "timestamp": "STRIPPED"
       }
     }
   ]
