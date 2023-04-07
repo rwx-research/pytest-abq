@@ -4,7 +4,12 @@ import socket
 import sys
 import platform
 import pytest
-from typing import Literal, Union
+from typing import Union
+
+if sys.version_info >= (3, 8):
+    from typing import Literal
+else:
+    from typing_extensions import Literal
 
 from .types import (
     AbqNativeRunnerSpawnedMessage,

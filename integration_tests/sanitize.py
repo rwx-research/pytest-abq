@@ -8,6 +8,7 @@ def sanitize_results(results):
             result["result"]["runtime"]["Nanoseconds"] = "STRIPPED"
             result["result"]["stderr"] = "STRIPPED"
             result["result"]["stdout"] = "STRIPPED"
+            result["result"]["timestamp"] = "STRIPPED"
     return results
 
 def sanitize_manifest(results):

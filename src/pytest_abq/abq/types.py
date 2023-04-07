@@ -1,7 +1,12 @@
 import socket
-from typing import Any, Dict, List, Optional, Union, Literal, TypedDict
+from typing import Any, Dict, List, Optional, Union
 from typing_extensions import NotRequired
 
+import sys
+if sys.version_info >= (3, 8):
+    from typing import Literal, TypedDict
+else:
+    from typing_extensions import Literal, TypedDict
 
 Connection = socket.socket
 
