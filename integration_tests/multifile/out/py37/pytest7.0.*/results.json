@@ -1,0 +1,126 @@
+[
+  [
+    {
+      "source": {
+        "runner": [
+          0,
+          1
+        ],
+        "is_singleton": true,
+        "has_stdout_reporters": false
+      },
+      "result": {
+        "status": "Success",
+        "id": "test_file1.py::test_1",
+        "display_name": "test_file1.py::test_1",
+        "output": "",
+        "runtime": {
+          "Nanoseconds": "STRIPPED"
+        },
+        "meta": {},
+        "location": {
+          "file": "test_file1.py",
+          "line": 2,
+          "column": null
+        },
+        "stderr": "STRIPPED",
+        "stdout": "STRIPPED",
+        "timestamp": 1680881889242
+      }
+    }
+  ],
+  [
+    {
+      "source": {
+        "runner": [
+          0,
+          1
+        ],
+        "is_singleton": true,
+        "has_stdout_reporters": false
+      },
+      "result": {
+        "status": {
+          "Failure": {}
+        },
+        "id": "test_file1.py::test_2",
+        "display_name": "test_file1.py::test_2",
+        "output": "def test_2():\n>       assert 1 == 2\nE       assert 1 == 2\n\ntest_file1.py:7: AssertionError",
+        "runtime": {
+          "Nanoseconds": "STRIPPED"
+        },
+        "meta": {},
+        "location": {
+          "file": "test_file1.py",
+          "line": 5,
+          "column": null
+        },
+        "stderr": "STRIPPED",
+        "stdout": "STRIPPED",
+        "timestamp": 1680881889266
+      }
+    }
+  ],
+  [
+    {
+      "source": {
+        "runner": [
+          0,
+          1
+        ],
+        "is_singleton": true,
+        "has_stdout_reporters": false
+      },
+      "result": {
+        "status": "Success",
+        "id": "test_file2.py::test_3",
+        "display_name": "test_file2.py::test_3",
+        "output": "",
+        "runtime": {
+          "Nanoseconds": "STRIPPED"
+        },
+        "meta": {},
+        "location": {
+          "file": "test_file2.py",
+          "line": 2,
+          "column": null
+        },
+        "stderr": "STRIPPED",
+        "stdout": "STRIPPED",
+        "timestamp": 1680881889267
+      }
+    }
+  ],
+  [
+    {
+      "source": {
+        "runner": [
+          0,
+          1
+        ],
+        "is_singleton": true,
+        "has_stdout_reporters": false
+      },
+      "result": {
+        "status": {
+          "Failure": {}
+        },
+        "id": "test_file2.py::test_4",
+        "display_name": "test_file2.py::test_4",
+        "output": "def test_4():\n>       assert 1 == 2\nE       assert 1 == 2\n\ntest_file2.py:7: AssertionError",
+        "runtime": {
+          "Nanoseconds": "STRIPPED"
+        },
+        "meta": {},
+        "location": {
+          "file": "test_file2.py",
+          "line": 5,
+          "column": null
+        },
+        "stderr": "STRIPPED",
+        "stdout": "STRIPPED",
+        "timestamp": 1680881889268
+      }
+    }
+  ]
+]

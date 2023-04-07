@@ -1,0 +1,94 @@
+[
+  [
+    {
+      "source": {
+        "runner": [
+          0,
+          1
+        ],
+        "is_singleton": true,
+        "has_stdout_reporters": false
+      },
+      "result": {
+        "status": "Success",
+        "id": "test_parameterized.py::test_eval[3+5-8]",
+        "display_name": "test_parameterized.py::test_eval[3+5-8]",
+        "output": "",
+        "runtime": {
+          "Nanoseconds": "STRIPPED"
+        },
+        "meta": {},
+        "location": {
+          "file": "test_parameterized.py",
+          "line": 2,
+          "column": null
+        },
+        "stderr": "STRIPPED",
+        "stdout": "STRIPPED",
+        "timestamp": 1680881908960
+      }
+    }
+  ],
+  [
+    {
+      "source": {
+        "runner": [
+          0,
+          1
+        ],
+        "is_singleton": true,
+        "has_stdout_reporters": false
+      },
+      "result": {
+        "status": "Success",
+        "id": "test_parameterized.py::test_eval[2+4-6]",
+        "display_name": "test_parameterized.py::test_eval[2+4-6]",
+        "output": "",
+        "runtime": {
+          "Nanoseconds": "STRIPPED"
+        },
+        "meta": {},
+        "location": {
+          "file": "test_parameterized.py",
+          "line": 2,
+          "column": null
+        },
+        "stderr": "STRIPPED",
+        "stdout": "STRIPPED",
+        "timestamp": 1680881908961
+      }
+    }
+  ],
+  [
+    {
+      "source": {
+        "runner": [
+          0,
+          1
+        ],
+        "is_singleton": true,
+        "has_stdout_reporters": false
+      },
+      "result": {
+        "status": {
+          "Failure": {}
+        },
+        "id": "test_parameterized.py::test_eval[6*9-42]",
+        "display_name": "test_parameterized.py::test_eval[6*9-42]",
+        "output": "test_input = '6*9', expected = 42\n\n    @pytest.mark.parametrize(\"test_input,expected\", [(\"3+5\", 8), (\"2+4\", 6), (\"6*9\", 42)])\n    def test_eval(test_input, expected):\n>       assert eval(test_input) == expected\nE       AssertionError: assert 54 == 42\nE        +  where 54 = eval('6*9')\n\ntest_parameterized.py:5: AssertionError",
+        "runtime": {
+          "Nanoseconds": "STRIPPED"
+        },
+        "meta": {},
+        "location": {
+          "file": "test_parameterized.py",
+          "line": 2,
+          "column": null
+        },
+        "stderr": "STRIPPED",
+        "stdout": "STRIPPED",
+        "timestamp": 1680881908985
+      }
+    }
+  ]
+]

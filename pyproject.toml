@@ -1,6 +1,6 @@
 [project]
 name = "pytest-abq"
-version = "1.0.0"
+version = "1.0.1"
 description = "Pytest integration for the ABQ universal test runner."
 readme = "README.md"
 requires-python = ">=3.7"

@@ -18,7 +18,7 @@ abq test -- pytest
 
 `pytest-abq` is actively tested against
 
-- Python 3.8, 3.9, 3.10
+- Python 3.7, 3.8, 3.9, 3.10
 - Pytest 7.0, 7.2
 
 `pytest-abq` may support Python and pytest versions beyond these.
